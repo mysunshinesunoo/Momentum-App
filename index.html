@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Momentum App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/d5051cf351.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d5051cf351.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- start->fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Seaweed+Script&display=swap" rel="stylesheet">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <!-- ends->fonts -->
+</head>
+
+<body id="main">
+
+
+  <div class="topMenu">
+    <div class="topMenu-left">
+      <p id = "topMainfocus"></p>
+    </div>
+    <div class="topMenu-right">
+      <i class="fa-solid fa-list-check checklist-icon" id="checklistIcon"></i>
+      <i class="bx bxs-alarm alarm-icon"></i>
+    </div>
+  </div>
+   <!-- main-container div starts here-->
+  <div class="main-container">
+     <!-- Date and time div starts here-->
+    <div class="center" id="time">
+      <p id="hours"></p><span> : </span>
+      <p id="minutes"></p><span id="colon"> : </span>
+      <p class="seconds" id="seconds"></p>
+      <p id="ampm"></p>
+    </div>
+    
+    <div id="date"></div>
+    
+    <div id="start">
+      <h1>Let's Get Started </h1>
+      <p>Enter your name:</p>
+      <form class = "submitname" id="submitname">
+      <input type="text" id="userName" placeholder="Name" required><br>
+      <!-- <button id="saveBtn">Save</button> -->
+      <input type="submit" value="Continue >" id="arrow">
+      </form>
+      <!-- <i class='bx bx-right-arrow-circle arrow-icon' id="arrow"></i> -->
+    </div>
+    <!-- Date and Time  div ends here-->
+    
+    <!-- Modal div starts here-->
+    <!-- <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <div class="modal-container">
+          <p>Please enter your name:</p>
+          <input type="text" id="userName" placeholder="Your Name" required>
+          <button id="saveBtn">Save</button>
+        </div>
+      </div>
+    </div> -->
+    <!-- Modal div ends here-->
+
+    <!-- Greetings div starts here-->
+    <div class="center" id ="greetings">
+      <span class = "greet">Good</span><span class = "greet" id="good"></span><span class = "greet">,</span><span class = "greet" id="name"></span>
+    </div>
+    <!-- greetings div ends here-->
+    
+    <!-- mainfocus starts here-->
+    <div class = "center" id="mainfocus">
+        <h3 id="focuslabel">What is your main focus today?</h3>
+        <form id="submitfocus">
+        <input type="text" id="focusinput" required>
+        <input type="submit" value="Continue >" id="btnfocus">
+        </form>
+            
+            <p id = "focustoday"></p>
+            
+    </div>
+    <!-- mainfocus div ends here-->
+    
+    <!-- TodoList modal div starts here-->
+    <div class = "center" id="TodoList">
+      <h1>To Do List</h1>
+        <form class="center" id="toDo">
+            <input type="text" id="listBox" required>
+            <input type="submit" value="Add&#43" id="submittodo">
+        </form>
+        <div id="list">
+
+        </div>
+    </div>
+      <!-- TodoList div ends here-->
+    
+     <!-- quotes modal div starts here-->
+    <div id="quotesModal" class="quotesmodal">
+      <div class="quotesmodal-content">
+        <span id="quoteclose">&times;</span>
+        <div class="quotesmodal-container">
+          <p>Add Quote:</p>
+          <input type="text" id="quoteAdd" onfocus="this.value=''" required>
+          <button id="addquoteBtn">Add</button>
+        </div>
+      </div>
+    </div>
+      <!-- Modal div ends here-->
+     <!-- pomodora div ends here-->
+     <!-- <div id="pomodoro">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </div>
+            <button id="startPomodoro">Start</button>
+            <button id="stopPomodoro">Stop</button>
+            <button id="resetPomodoro">Reset</button>
+        </div>
+    </div> -->
+  <!-- pomodoro div starts here-->
+    <!-- quotes div starts here-->
+ 
+    <div class="center" id="quotes">
+      <h2></h2>
+      <p id="quote"></p><i class='bx bx-message-rounded-add icondef addquote'></i>
+    </div>
+    <!-- quotes div ends here-->
+    
+  </div>
+  <!-- main-container div ends here-->
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge.js" theme="purple" defer></script>
+</body>
+
+</html>
